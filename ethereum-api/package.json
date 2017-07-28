@@ -1,0 +1,14 @@
+{
+  "name": "ethereum-api",
+  "version": "0.1.0",
+  "description": "Services for talking with Ethereum loans",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Getline.in",
+  "devDependencies": {
+    "typescript": "^2.4.2"
+  },
+  "private": true
+}
