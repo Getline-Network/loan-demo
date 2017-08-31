@@ -1,0 +1,160 @@
+#create-account-div
+{
+	height: 100vh;
+	background-image: url('CreateAccount/07.gif');
+}
+.background-padding-div
+{
+	min-width: 600px;
+	background-image: url('CreateAccount/04.png');
+	margin: auto;
+	height: 100vh;
+	width: 50%;
+}
+.login-centering-div
+{
+	margin: auto;
+	width: 400px;
+}
+.content-panel
+{
+	border-radius: 2px;
+	border: 1px solid white;
+	background-color: white;
+}
+.page-title
+{
+	padding-top: 70px;
+	padding-left: 30px;
+	font-family: Montserrat;
+	  font-size: 34px;
+	  font-weight: 300;
+	  line-height: 1.06;
+	  letter-spacing: -0.4px;
+	  text-align: left;
+}
+#create-account-panel
+{
+	width: 470px;
+	height: 475px;
+}
+#facebook-sign-up-button
+{
+	margin: auto;
+	width: 100%;
+}
+.blue-button
+{
+	background-color: #4267b2;
+	border: 1px solid #4267b2;
+}
+.button-white-caption
+{
+	color: white;
+	  font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  color: #ffffff;
+}
+.or-divisor
+{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	height: 20px;
+}
+.or-divisor-line
+{
+	width: calc(50% - 31px);
+	border: 1px grey solid;
+	height: 2px;
+	float: left;
+	margin: auto;
+	margin-top: 10px;
+}
+.or-divisor-text
+{
+	float: left;
+	width: 22px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#create-account-form-div
+{
+	margin: auto;
+	margin-top: 20px;
+	float: center;
+
+}
+.grey-text
+{
+	color: grey;
+	font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #858585;
+}
+.inner-panel
+{
+	width: calc(100% - 120px);
+	margin: 60px;
+}
+#facebook-button-icon
+{
+	float: left;
+	width: 20px;
+  	height: 20px;
+}
+.button-centering-div
+{
+	margin: auto;
+	padding: 10px;
+	width: 80%;
+}
+.button-white-caption
+{
+	color: white;
+	margin: 0px;
+}
+.white-input
+{
+	border: none;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#email-input
+{
+	border-bottom: 2px #e92b2b solid;
+	width: 100%;
+	font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  text-align: left;
+}
+#password-input
+{
+	border-bottom: 2px #e92b2b solid;
+	width: 100%;
+		font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  text-align: left;
+}
+.red-button
+{
+	color: white;
+	background-color: #e92b2b;
+	border: 1px #e92b2b solid;
+	font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  text-align: center;
+}
+#sign-up-button
+{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+}

@@ -1,0 +1,523 @@
+/* CSS declarations go here */
+/* CSS declarations go here */
+
+.getline {
+  width: 86px;
+  height: 27px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #101010 !important;
+  /*color: var(--color-black-cod) !important;*/
+  margin: 33px 0px 0px 73px;
+  padding-right: 129px;
+  border-right: 1px lightgray solid;
+}
+
+.INVEST {
+  width: 40px;
+  height: 13px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #101010 !important;
+  /*color: var(--color-black-cod) !important;*/
+  margin: 0px 0px 0px 122px;
+  clear: both;
+
+}
+.summary
+{
+	margin-left: 39px;
+}
+
+
+
+#main-menu
+{
+	color: grey;
+	position: fixed;
+	width: 100%;
+	margin-left: 30px;
+	padding-top: 10px;
+}
+#legend
+{
+	height: 30px;
+	float: right;
+	padding-right: 50px;
+	font-size: 10px;
+}
+#main-page-div
+{
+	width: 600px;
+	margin: auto;
+	padding-top: 50px;
+}
+#category-selection-div
+{
+	left: 50px;
+}
+.category-plaque
+{
+	width: 200px;
+	height: 100px;
+	padding: 20px;
+	background-color: lightgray;
+	float: left;
+	margin: 20px;
+}
+.bton
+{
+	float: left;
+}
+
+.category-main
+{
+	clear: both;
+	padding-top: 50px;
+}
+
+.problem-div, .add-problem-div
+{
+	border: 1px solid grey;
+	padding: 20px;
+	background-color: lightgray;
+	width: 600px;
+	margin: auto;
+	margin-top: 30px;
+	clear: both;
+}
+.problem-category-link
+{
+	float: right;
+}
+.todo-tag-div
+{
+	background-color: white;
+}
+h1{
+	clear: both;
+	margin-left: 20%;
+}
+.admin-problem-edit-div
+{
+	border: 1px solid white;
+}
+
+.short-todo-div, .short-list-div
+{
+	clear: both;
+	background-color: #EDEDED;
+	
+	/*margin-left: 20%;*/
+	padding: 5px;
+	margin-top: 7.5px;
+}
+#todos-div, #lists-div
+{
+	max-width: 600px;
+	margin: auto;
+	padding-top: 50px;
+}
+#todos-button-panel
+{
+	padding-left: 30px;
+}
+.editable-text, .editable-list-item
+{
+	background-color: white;
+	padding: 5px;
+}
+
+.add-variable-input
+{
+	width: 30px;
+}
+.delete-variable-button
+{
+	margin-left: 20px;
+}
+
+.todo-div, .add-todo-div, .list-div, .add-list-div
+{
+	width: 800px;
+	margin: auto;
+	margin-top: 10px;
+	/*margin-bottom: 40px;*/
+	clear: both;
+	background-color: #EEE;
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	opacity: 0.9;
+}
+
+.admin-todo-div
+{
+	margin: auto;
+	width: 1000px;
+	background-color: lightblue;
+	border: 1px black solid;
+	padding: 15px;
+}
+.tech-tree-div
+{
+	clear: both;
+	padding-top: 50px;
+}
+
+.tech-tree-top-div, .tech-tree-middle-div, .tech-tree-bottom-div
+{
+	clear: both;
+	margin: 30px;
+	height: 200px;
+}
+
+.todo-node-div
+{
+	background-color: #DFD;
+	margin-left: 50px;
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding: 15px;
+	border: 1px solid #EEE;
+}
+.center-node-div
+{
+	margin: auto;
+	float: none;
+}
+
+.tech-tree-top-centering-div, .tech-tree-bottom-centering-div
+{
+	float: none;
+	margin: auto;
+	height: 200px;
+}
+.loading-div
+{
+	margin: auto;
+	padding-top: 100px;
+}
+.admin-category-div
+{
+	clear: center;
+	float: left;
+}
+
+.add-category-div
+{
+	width: 600px;
+	margin:auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	clear: both;
+	background-color: lightblue;
+	padding: 15px;
+}
+.add-todo-link-div, .admin-todo-link-div
+{
+	width: 600px;
+	margin:auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	clear: both;
+	background-color: lightgrey;
+	padding: 15px;
+}
+.short-course-div
+{
+	padding: 10px;
+	border: solid 1px black;
+	min-width: 300px;
+	width: 30%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.courses-div
+{
+	padding: 10px;
+	margin: auto;
+	min-width: 600px;
+	width: 600px;
+}
+.course-div
+{
+	padding: 10px;
+	margin: auto;
+	min-width: 600px;
+	width: 600px;
+}
+.admin-course-div
+{
+	padding: 10px;
+	background-color: lightgray;
+	border: 1px solid black;
+}
+
+.todo-div
+{
+	border-top: 1px solid #337ab7;
+	border-left: 1px solid #337ab7;
+}
+.todo-date, .list-date
+{
+	float: right;
+}
+
+#new-todo-div, #new-list-div
+{
+	background-color: #EEE;
+	padding: 5px;
+}
+
+#new-todo-textarea, #new-list-textarea
+{
+	width: 100%;
+}
+
+#new-todo-button
+{
+}
+
+.todo-delete-button, .todo-unlink-button, .list-delete-button, .list-unlink-button
+{
+	float: right;
+	margin-left: 10px;
+	color: #999;
+	padding: 3px 6px;
+	font-size: 11px;
+}
+.new-prerequisite-div
+{
+	height: 50px;
+}
+.new-prerequisite-textarea
+{
+	height: 30px;
+	padding-left: 10px;
+	float: left;
+}
+.new-prerequisite-button
+{
+	float: left;
+}
+
+.editable-text
+{
+	font-size: 24px;
+	border: 1px dashed black;
+}
+.wide-text-edit
+{
+	font-size: 24px;
+	border: 1px dashed black;
+}
+.todo-wrapper-div, .list-wrapper-div
+{
+	margin: auto;
+	padding-top: 50px;
+}
+.inner-todo-wrapper-div, .inner-list-wrapper-div
+{
+	margin: auto;
+	max-width: 900px;
+}
+
+.hotsearch-items
+{
+	width: 100%;
+	clear: both;
+	border: 1px solid #337ab7;
+}
+.hotsearch-item
+{
+	width: 100%;
+	clear: both;
+	background-color: white;
+	padding-left: 20px;
+}
+.hotsearch-item:hover
+{
+	color: #337ab7;
+	background-color: #EEF;
+}
+h3
+{
+	font-size: 20px;
+	margin: 0px;
+	margin-left: 10px;
+}
+.todo-checkbox
+{
+	margin-left: 50px;
+	width: 17px;
+	height: 17px;
+}
+.todo-paragraph
+{
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+.todo-paragraph a
+{
+	margin-left: 20px;
+}
+.id-notification-div
+{
+	margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+/*NEW*/
+
+body{
+	background-image: url(/CreateAccount/07.gif);
+}
+
+.navbar
+{
+	background-color: white;
+	font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  text-align: center;
+}
+.nav p, .nav li, .nav a
+{
+	float: left;
+	color: grey;
+}
+.nav li a
+{
+	width: 93px;
+	height: 14px;
+	margin: auto;
+	padding: 0px;
+	margin-top: 43px;
+	margin-bottom: 43px;
+}
+.nav-pills li a
+{
+	border-radius: 0px;
+}
+.nav li:focus, .nav li:hover
+{
+	border-bottom: 3px #7249f8 solid;
+	color: #7249f8;
+	background-color: white;
+}
+.nav li a:focus, .nav li a:hover
+{
+	background-color: white;
+	color: #7249f8;	
+}
+.nav li
+{
+	height: 98px;
+	width: 93px;
+}
+
+.content-div
+{
+	padding-top: 100px;
+	color: black;
+}
+
+#logo
+{
+	float: left;
+	margin-left: 73px;
+	margin-top: 29px;
+	margin-right: 50px;
+}
+.button
+{
+	border-radius: 2px;
+}
+#profile-image
+{
+	float: right;
+}
+
+
+#login-buttons
+{
+	float: right;
+	margin-top: 50px;
+}
+.login-button
+{
+	border-radius: 2px !important;
+	background-color: white !important;
+	border-color: darkgray !important;
+	color: darkgray !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------FONTS------*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-Regular.otf);
+}
+
+.dot-background
+{
+	background-image: linear-gradient(transparent 0px, transparent 0.5px, rgb(255, 255, 255) 0.5px, rgb(255, 255, 255) 5px), linear-gradient(to right, rgb(200, 195, 199) 0px, rgb(200, 195, 199) 0.5px, rgb(255, 255, 255) 0.5px, rgb(255, 255, 255) 5px);
+}

@@ -1,0 +1,45 @@
+<head>
+  <title>Getline Invest</title>
+</head>
+
+<body>
+  {{>menu}}
+  {{layout}}
+</body>
+
+
+<template name="layout">
+  <!--{{>addbutton}}-->
+  {{yield}}
+</template>
+
+<template name="menu">
+  <div id="main-menu">
+
+  <nav class="navbar navbar-fixed-top">
+
+  <ul class="nav nav-pills black">
+    <a href="/">
+      <p class="getline">getline</p>
+      <p class="INVEST">invest</p>
+    </a>
+    <li role="presentation" class="summary"><a href="/Summary">SUMMARY</a></li>
+    <li role="presentation"><a href="/Funds">FUNDS</a></li>
+    <li role="presentation"><a href="/Transfer">TRANSFER</a></li>
+    <li role="presentation"><a href="/Invest">INVEST</a></li>
+    <li role="presentation"><a href="/Borrow">BORROW</a></li>
+    <!--<li role="presentation"><a href="/CreateAccount">CREATE ACCOUNT</a></li>-->
+    <img id="profile-image" src="/profile_image.png">
+    {{>loginButtons}}
+    Block no. {{currentBlock}}
+  </ul>
+  </nav>
+    <!--
+    <a href="/"><img id="phoebe-logo" src="/PhoebeLogo.png" style="float: left; height: 30px;"></a>
+    <a href="/Todos"><div class="btn btn-default bton">Todos</div></a>
+    <a href="/Lists"><div class="btn btn-default bton">Lists</div></a>
+    {{#if isAdmin}} <a href="/AdminMain"><div class="btn btn-default bton">Admin</div></a>{{/if}}
+    <div class="btn btn-default bton">{{>loginButtons}}</div>
+    {{#if isTodosView}}{{>Legend}}{{/if}} -->
+  </div>
+</template>

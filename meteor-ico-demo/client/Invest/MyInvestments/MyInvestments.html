@@ -1,0 +1,108 @@
+<template name="MyInvestments">
+	<div id="invest-div" class="content-div">
+	{{>SecondMenuList}}
+		<div class="My-investments-content-panel">
+
+				<div class="investment-indicators-spacer">
+					<div class="investment-indicators">
+						<div class="currently-invested-indicator half-width">
+							<p class="grey-text">CURRENTLY INVESTED</p>
+							<p class="investment-indicator">145.00</p>
+							<p class="currency-name">BTC</p>
+						</div>
+						<div class="earnings-indicator half-width">
+							<p class="grey-text">EARNINGS</p>
+							<p class="investment-indicator">20.00</p>
+							<p class="currency-name">BTC</p>
+						</div>
+					</div>
+				</div>
+				<div class="current-investments">
+					<div class="single-investment-panel">
+						<div class="single-investment-panel-top">
+							<div class="investment-class-indicator green-class">A</div>
+							<p class="sip-top-text">Auto invest</p>
+						</div>
+						<div class="single-investment-panel-middle">
+							<div class="sip-panel-middle-left">
+							<p class="grey-text centered">CURRENT RATE</p>
+							<p class="sip-panel-indicator centered">100.00 BTC</p>
+							</div>
+							<div class="sip-panel-middle-center">
+							<p class="grey-text centered">RATE</p>
+							<p class="sip-panel-indicator centered">1.5%</p>
+							<p class="grey-text centered">15% APR</p>
+							</div>
+							<div class="sip-panel-middle-right">
+							<p class="grey-text centered">EARNED</p>
+							<p class="sip-panel-indicator centered">0.00 BTC</p>
+							</div>
+						</div>
+						<div class="single-investment-panel-bottom">
+							<button class="button change-auto-invest-button">Change auto invest settings</button>
+						</div>
+					</div>
+					<div class="single-investment-panel">
+						<div class="single-investment-panel-top">
+							<div class="investment-class-indicator orange-class">C</div>
+							<p class="sip-top-text">My business investment</p>
+							<p class="owner-name">Rosie Wallace</p>
+						</div>
+						<div class="single-investment-panel-middle">
+							<div class="sip-panel-middle-left">
+							<p class="grey-text centered">CURRENT RATE</p>
+							<p class="sip-panel-indicator centered">0.1 BTC</p>
+							</div>
+							<div class="sip-panel-middle-center">
+							<p class="grey-text centered">RATE</p>
+							<p class="sip-panel-indicator centered">1.5%</p>
+							<p class="grey-text centered">15% APR</p>
+							</div>
+							<div class="sip-panel-middle-right">
+							<p class="grey-text centered">EARNED</p>
+							<p class="sip-panel-indicator centered">0.00 BTC</p>
+							</div>
+						</div>
+						<div class="single-investment-panel-bottom">
+							<div class="sip-graphs-img1"></div>
+						</div>
+					</div>
+					<div class="single-investment-panel">
+						<div class="single-investment-panel-top">
+							<div class="investment-class-indicator red-class">D</div>
+							<p class="sip-top-text">Another investment</p>
+							<p class="owner-name">Rosie Wallace</p>
+						</div>
+						<div class="single-investment-panel-middle">
+							<div class="sip-panel-middle-left">
+							<p class="grey-text centered">CURRENT RATE</p>
+							<p class="sip-panel-indicator centered">30.00 BTC</p>
+							</div>
+							<div class="sip-panel-middle-center">
+							<p class="grey-text centered">RATE</p>
+							<p class="sip-panel-indicator centered">3.5%</p>
+							<p class="grey-text centered">15% APR</p>
+							</div>
+							<div class="sip-panel-middle-right">
+							<p class="grey-text centered">EARNED</p>
+							<p class="sip-panel-indicator centered">1.05 BTC</p>
+							</div>
+						</div>
+						<div class="single-investment-panel-bottom">
+							<div class="sip-graphs-img2"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="completed-investments">
+				 <h2 class="page-title">Completed investments</h2>
+
+
+				</div>
+
+
+
+		</div>
+	</div>
+</template>

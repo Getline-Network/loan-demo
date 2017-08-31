@@ -1,0 +1,132 @@
+#summary-div
+{
+	height: 100vh;
+	background-image: url('CreateAccount/07.gif');
+}
+
+
+#summary-left-div
+{
+	width: 350px;
+	float: left;
+	margin-left: 30px;
+}
+#summary-right-div
+{
+	width: calc(100% - 60px - 60px - 350px);
+	float: left;
+	margin-left: 30px;
+	margin-right: 60px;
+}
+#transfers-content-panel
+{
+	padding: 25px;
+	min-width: 450px;
+}
+.funds-content-panel
+{
+	padding: 25px;
+	border: 1px white solid;
+	border-radius: 2px;
+	background-color: white;
+}
+.centering-div
+{
+	margin: auto;
+}
+.transparent-button
+{
+	background-color: transparent;
+	border: 2px lightgrey solid;
+
+	font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  text-align: center;
+}
+#add-funds-button, #manage-your-funds-button
+{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	margin-top: 10px;
+}
+#currency-list
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#currency-list .grey-text, #currency-list .currency-amount, #currency-list .li,
+{
+	margin: 0px;
+}
+#currency-list .grey-text
+{
+	  font-family: Montserrat;
+	  font-size: 12px;
+	  text-align: left;
+	  color: #858585;
+}
+#currency-list li
+{
+	border-bottom: 1px lightgrey solid;
+	height: 30px;
+	margin-top: 5px;
+}
+#currency-list .grey-text, #currency-list .currency-amount
+{
+	float: left;
+
+}
+#currency-list .grey-text{
+	width: 70%;
+}
+#currency-list .currency-amount{
+	width: 30%;
+}
+.currency-amount
+{
+	font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+  color: #101010;
+}
+
+#BTC-indicator
+{
+	margin: auto;
+
+	font-family: Montserrat;
+	  font-size: 28px;
+	  line-height: 1;
+	  letter-spacing: -0.3px;
+	  text-align: center;
+	  color: #101010;
+
+}
+#dollar-indicator
+{
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.border-bottom-grey
+{
+	border-bottom: lightgrey 1px solid;
+}
+#transfer-money-img, #request-money-img
+{
+	margin: 25px;
+}
+
+.text-centered
+{
+	margin: auto;
+	text-align: center;
+}
+.bottom-margin
+{
+	margin-bottom: 20px;
+}

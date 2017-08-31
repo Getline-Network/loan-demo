@@ -1,0 +1,163 @@
+#funds-div
+{
+	background-image: url(/CreateAccount/07.gif);
+}
+
+#funds-left-div
+{
+	width: 270px;
+	float: left;
+}
+#wallets{
+	padding-top: 120px;
+  float: left;
+  margin: auto;
+  width: calc(100% - 300px);
+}
+
+
+.wallet-panel {
+	float: left;
+  width: 420px;
+  height: 203px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02);
+  
+  margin: 15px;
+}
+
+.wallet-upper-div{
+	height: 100px;
+	padding: 30px;
+	border-bottom: 1px lightgrey solid;
+}
+.wallet-lower-div
+{
+	padding: 30px;
+}
+
+.wallet-round-button{
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: solid 2px #eeeeee;
+  border-radius: 32px;
+  float: left;
+}
+.wallet-title
+{
+	float: left;
+  height: 22px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #101010;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+}
+.wallet-currency-name
+{
+	clear: left;
+	height: 13px;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #858585;
+  margin: 0px;
+  margin-left: 60px;
+  padding: 0px;
+}
+.wallet-button-div
+{
+}
+.wallet-left-div
+{
+	float: left;
+	width: 50%;
+}
+.wallet-indicator
+{
+ float: right;
+ width: 50%;
+}
+.wallet-indicator-amount
+{
+float: right;
+height: 36px;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.06;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #101010;
+}
+.wallet-indicator-currency
+{
+	float: right;
+	height: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+  color: #b6b6b6;
+}
+.wallet-rate-div
+{
+	width: calc(100% - 146px);
+	float: left;
+}
+.rate-equation
+{
+	height: 22px;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.83;
+  text-align: left;
+  color: #101010;
+}
+.exchange-dark-grey-button
+{
+	float: left;
+	width: 146px;
+  height: 44px;
+		color: white;
+	background-color: #858585;
+	border: 1px #858585 solid;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+.exchange-red-button
+{
+	float: left;
+	width: 146px;
+  height: 44px;
+		color: white;
+	background-color: #e92b2b;
+	border: 1px #e92b2b solid;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+#funds-left-div
+{
+  margin-left: 30px;
+}
+
+.exchange-button
+{
+  float: right;
+}

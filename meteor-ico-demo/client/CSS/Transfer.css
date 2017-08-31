@@ -1,0 +1,65 @@
+#transfer-div
+{
+	font-family: Montserrat;
+	font-weight: 600;
+}
+
+.transfer-content-panel
+{
+	background-color: white;
+	border-radius: 2px;
+	width: 30%;
+	float: left;
+	margin: auto;
+	padding: 25px;
+	height: 320px;
+}
+#transfer-left-div{
+	margin-left: 50px;
+}
+#transfer-middle-div
+{
+	float: left;
+	width: 30%;
+	margin: auto;
+}
+#transfer-left-div input
+{
+	clear: both;
+	float: left;
+	width: 90%;
+	    font-size: 16px;
+}
+#transfer-right-div input
+{
+	clear: both;
+	float: left;
+	width: 90%;
+	    font-size: 16px;
+}
+#transfer-img-arrow
+{
+	margin: auto;
+	margin-left: calc( 50% - 41px );
+	margin-right: calc( 50% - 41px );
+	margin-top: 100px;
+}
+.transfer-middle-button{
+	width: 100%;
+	margin: auto;
+	margin-top: 170px;
+	padding: 15px;
+	
+}
+.grey-bottom-border
+{
+	border-bottom: 1px lightgrey solid;
+}
+.divisor
+{
+	width: 100%;
+	border-bottom: 1px lightgrey solid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+

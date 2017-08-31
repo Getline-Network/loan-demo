@@ -1,0 +1,22 @@
+TODO:
+
+szkielet backendowy do formularza pobierania pozyczki
+
+cechy:
+dowolna waluta z eth,
+polaczenie z metamaskiem
+
+zapisywanie maili
+zapisywanie portfel usera vs. pozyczka usera
+smart contracts na eth
+
+
+
+
+design formularza
+1. how much/which currency
+2. collateral
+3. how much time for fundraising
+4. how much time for payback
+5. your interest
+6. confirm/deploy

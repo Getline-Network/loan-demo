@@ -1,0 +1,60 @@
+<template name="RequestLoanForm">
+	<div id="request-loan-form-div" class="content-div">
+	<h1>Request loan</h1>
+	<!--.<h1>Tokens {{>TokenCounter}}</h1>-->
+
+			<div class="borrow-form">
+
+				{{>TokenIndicators}}
+				<br>
+
+				<input class="borrow-input" id="title-input" placeholder="Loan title">
+
+				<input class="borrow-input" id="borrow-amount-input" placeholder="Amount">
+
+					<select class="borrow-select" id="currency-select">
+						<option selected disabled>Choose token</option>
+						<option>ETH</option>
+						<option>BTC</option>
+						<option>Monkey</option>
+						<option>Panda</option>
+					</select>
+				<p id="collateral-label">COLLATERAL</p><br>
+
+				<input class="borrow-input" id="collateral-amount-input" placeholder="Collateral"><p id="collateral-currency-symbol">GET</p>
+
+				<input class="borrow-input" id="interest-input" placeholder="Percentage"><p id="percent-symbol">%</p>
+
+				<!--<input class="borrow-input" id="fundraising-time-input" placeholder="Fundraising time">-->
+
+				<div id="payback-time-div">
+					<H3 id="Payback-time-period">Payback time period</H3>
+					<p id="pick-predefined-payback-time">Pick predefined period of time or type your own</p>
+					<div id="payback-time-button-group">
+						<button class="button purple-active-border hollow-button payback-time-button" id="one-month-period">1 Month</button>
+						<button class="button purple-active-border hollow-button payback-time-button" id="two-month-period">2 Months</button>
+						<button class="button purple-active-border hollow-button payback-time-button" id="three-month-period">3 Months</button>
+						<button class="button purple-active-border hollow-button payback-time-button" id="six-month-period">6 Months</button>
+					</div>
+					<input class="borrow-input" id="payback-time-input" placeholder="Days number"><p id="days-symbol">DAYS</p>
+				</div>
+
+				<textarea class="borrow-input" id="description-textarea" placeholder="Description"></textarea>
+
+				<div id="metamask-info-div">
+				<p id="to-complete-process">To complete process you need metamask account</p>
+				<p id="what-is-really" class="grey-text">What is really metamask and how it works? Read here</p>
+				
+				<button class="borrow-button button purple-button" id="authorize-metamask-button">Authorize Metamask</button>
+				<p id="alert-paragraph"></p>
+				</div>
+
+			</div>
+	</div>
+</template>
+
+<template name="TokenCounter">
+	{{#if T1}} T1 {{T1}} {{/if}}
+	{{#if T2}} T2 {{T2}} {{/if}}
+	{{#if T3}} T3 {{T3}} {{/if}}
+</template>

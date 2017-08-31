@@ -1,0 +1,57 @@
+<template name="Invest">
+	<div id="invest-div" class="content-div">
+	{{>SecondMenuList}}
+	</div>
+</template>
+
+
+<template name="SecondMenuList">
+<div class="invest-second-menu">
+<div class="invest-second-menu-centering-div">
+	<a href="/LoanListing">		<button class="btn invest-second-menu-button">Loan listing</button>		</a>
+	<a href="/AutoInvest">		<button class="btn invest-second-menu-button">Auto invest</button>		</a>
+	<a href="/MyInvestments">	<button class="btn invest-second-menu-button">My investments</button>	</a>
+</div>
+</div>
+</template>
+
+
+<template name="LoanListing">
+	<div id="invest-div" class="content-div">
+	{{>SecondMenuList}}
+		<h1 class="Loan-listing page-title">Loan listing</h1>
+		<div class="Loan-listing-content-panel">
+		{{>LoanListingMainModule}}
+		{{>YouHaveNoLoansYet}}
+		</div>
+	</div>
+</template>
+
+<template name="LoanListingMainModule">
+</template>
+
+
+<template name="YouHaveNoLoansYet">
+	<!-- svg -->
+	<div class="Loans-spacer-div">
+	</div>
+	<div class="circular-div">
+	 	<img src="Invest/group.svg" class="SVG-Group">
+	</div>
+	<p class="You-have-no-loans-yet">You have no loans yet</p>
+	<p class="Loans-additional-text">
+	Maecenas lacinia ex at varius viverra. Phasellus bibendum semper quam et malesuada. Morbi ex dolor, pellentesque sed dictum sed, tincidunt ut erat. Integer pulvinar mauris non tempor scelerisque.
+	</p>
+
+</template>
+
+
+<template name="AutoInvest">
+	<div id="invest-div" class="content-div">
+	{{>SecondMenuList}}
+		<h1 class="Auto-invest page-title">Auto invest</h1>
+		<div class="Loan-listing-content-panel">
+
+		</div>
+	</div>
+</template>

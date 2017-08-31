@@ -1,0 +1,12 @@
+<template name="TokenIndicators">
+	<div class="token-list">
+		<div class="token-wrapper"><div class="Oval-token token-symbol"></div><p class="token-indicator" style="font-size: {{token1.fontSize}}; margin-top: {{token1.marginTop}}">{{token1.balance}}</p></div>
+		<div class="token-wrapper"><div class="Triangle-token token-symbol"></div><p class="token-indicator" style="font-size: {{token2.fontSize}}; margin-top: {{token2.marginTop}}">{{token2.balance}}</p></div>
+		<div class="token-wrapper"><div class="Square-token token-symbol"></div><p class="token-indicator" style="font-size: {{token3.fontSize}}; margin-top: {{token3.marginTop}}">{{token3.balance}}</p></div>
+	</div>
+</template>
+
+
+<template name="MagicAddButton">
+	<button class="button red-button" id="magic-add-button">Get some tokens</button>
+</template>

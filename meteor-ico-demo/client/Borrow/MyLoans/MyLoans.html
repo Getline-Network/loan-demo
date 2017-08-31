@@ -1,0 +1,168 @@
+<template name="MyLoans">
+	<div id="invest-div" class="content-div">
+			<div class="My-investments-content-panel">
+
+					<div class="investment-indicators-spacer">
+						<div class="investment-indicators">
+							<div class="currently-invested-indicator half-width">
+								<p class="grey-text">CURRENTLY BORROWED</p>
+								<p class="investment-indicator">{{currentlyBorrowed}}</p>
+								<p class="currency-name">BTC</p>
+							</div>
+							<div class="earnings-indicator half-width">
+								<p class="grey-text">MINIMUM MONTHLY RATES</p>
+								<p class="investment-indicator">{{minimumMonthlyRates}}</p>
+								<p class="currency-name">BTC</p>
+							</div>
+						</div>
+					</div>
+					<div class="current-investments">
+						{{#each Loans}}
+							{{>SingleLoanTemplate}}
+						{{/each}}
+
+					</div>
+			</div>
+
+	</div>
+</template>
+
+
+<template name="SingleLoanTemplate">
+
+	<div class="single-investment-panel">
+		<div class="single-investment-panel-top">
+			<p class="sip-top-text">{{#if title}}{{title}}{{else}}Title here{{/if}}</p>
+			<br>
+			<p class="grey-text">{{address}}</p>
+		</div>
+		<div class="single-investment-panel-middle">
+			<div class="sip-panel-middle-left">
+			<p class="grey-text centered">Amount borrowed</p>
+			<p class="sip-panel-indicator centered">{{amount}} BTC</p>
+			</div>
+			<div class="sip-panel-middle-center">
+			<p class="grey-text centered">Rate</p>
+			{{#if rate}}<p class="sip-panel-indicator centered">{{rate}} %</p>{{/if}}
+			<!--<p class="grey-text centered">{{rate}} APR</p>-->
+			</div>
+			<div class="sip-panel-middle-right">
+			<p class="grey-text centered">Paid</p>
+			{{#if paid}}<p class="sip-panel-indicator centered">{{paid}} BTC</p>{{/if}}
+			</div>
+		</div>
+		<div class="single-investment-panel-bottom">
+			<div class="sip-graphs-img1"></div>
+		</div>
+	</div>
+
+</template>
+
+
+
+
+
+<!--
+
+<div class="single-investment-panel">
+							<div class="single-investment-panel-top">
+								<div class="investment-class-indicator green-class">A</div>
+								<p class="sip-top-text">Car loan</p>
+							</div>
+							<div class="single-investment-panel-middle">
+								<div class="sip-panel-middle-left">
+								<p class="grey-text centered">CURRENT RATE</p>
+								<p class="sip-panel-indicator centered">100.00 BTC</p>
+								</div>
+								<div class="sip-panel-middle-center">
+								<p class="grey-text centered">RATE</p>
+								<p class="sip-panel-indicator centered">1.5%</p>
+								<p class="grey-text centered">15% APR</p>
+								</div>
+								<div class="sip-panel-middle-right">
+								<p class="grey-text centered">EARNED</p>
+								<p class="sip-panel-indicator centered">0.00 BTC</p>
+								</div>
+							</div>
+							<div class="single-investment-panel-bottom">
+								<button class="button change-auto-invest-button">Change auto invest settings</button>
+							</div>
+						</div>
+						<div class="single-investment-panel">
+							<div class="single-investment-panel-top">
+								<div class="investment-class-indicator orange-class">C</div>
+								<p class="sip-top-text">Business expansion loan</p>
+								<p class="owner-name">Rosie Wallace</p>
+							</div>
+							<div class="single-investment-panel-middle">
+								<div class="sip-panel-middle-left">
+								<p class="grey-text centered">CURRENT RATE</p>
+								<p class="sip-panel-indicator centered">0.1 BTC</p>
+								</div>
+								<div class="sip-panel-middle-center">
+								<p class="grey-text centered">RATE</p>
+								<p class="sip-panel-indicator centered">1.5%</p>
+								<p class="grey-text centered">15% APR</p>
+								</div>
+								<div class="sip-panel-middle-right">
+								<p class="grey-text centered">EARNED</p>
+								<p class="sip-panel-indicator centered">0.00 BTC</p>
+								</div>
+							</div>
+							<div class="single-investment-panel-bottom">
+								<div class="sip-graphs-img1"></div>
+							</div>
+						</div>
+						<div class="single-investment-panel">
+							<div class="single-investment-panel-top">
+								<div class="investment-class-indicator red-class">D</div>
+								<p class="sip-top-text">My first little loan</p>
+								<p class="owner-name">Rosie Wallace</p>
+							</div>
+							<div class="single-investment-panel-middle">
+								<div class="sip-panel-middle-left">
+								<p class="grey-text centered">CURRENT RATE</p>
+								<p class="sip-panel-indicator centered">30.00 BTC</p>
+								</div>
+								<div class="sip-panel-middle-center">
+								<p class="grey-text centered">RATE</p>
+								<p class="sip-panel-indicator centered">3.5%</p>
+								<p class="grey-text centered">15% APR</p>
+								</div>
+								<div class="sip-panel-middle-right">
+								<p class="grey-text centered">EARNED</p>
+								<p class="sip-panel-indicator centered">1.05 BTC</p>
+								</div>
+							</div>
+							<div class="single-investment-panel-bottom">
+								<div class="sip-graphs-img2"></div>
+							</div>
+						</div>
+						<div class="single-investment-panel">
+							<div class="single-investment-panel-top">
+								<div class="investment-class-indicator red-class">D</div>
+								<p class="sip-top-text">Simple loan</p>
+								<p class="owner-name">Rosie Wallace</p>
+							</div>
+							<div class="single-investment-panel-middle">
+								<div class="sip-panel-middle-left">
+								<p class="grey-text centered">CURRENT RATE</p>
+								<p class="sip-panel-indicator centered">30.00 BTC</p>
+								</div>
+								<div class="sip-panel-middle-center">
+								<p class="grey-text centered">RATE</p>
+								<p class="sip-panel-indicator centered">3.5%</p>
+								<p class="grey-text centered">15% APR</p>
+								</div>
+								<div class="sip-panel-middle-right">
+								<p class="grey-text centered">EARNED</p>
+								<p class="sip-panel-indicator centered">1.05 BTC</p>
+								</div>
+							</div>
+							<div class="single-investment-panel-bottom">
+								<div class="sip-graphs-img2"></div>
+							</div>
+						</div>
+
+
+-->

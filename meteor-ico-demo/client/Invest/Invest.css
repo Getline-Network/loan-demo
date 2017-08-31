@@ -1,0 +1,94 @@
+.invest-second-menu
+{
+	margin: auto;
+	background-color: white;
+	height: 58px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.invest-second-menu-centering-div
+{
+	margin: auto;
+	width: 500px;
+
+}
+.invest-second-menu-button
+{
+	background-color: white;
+	  font-family: Montserrat;
+	  font-size: 12px;
+	  text-align: left;
+	  color: #1c1c1c;
+	  width: 150px;
+	  margin: auto;
+	  text-align: center;
+	  	border-radius: 3px;
+}
+.invest-second-menu-button:hover, .invest-second-menu-button:active
+{
+	background-color: lightgray;
+
+  background-color: #f8f8f8;
+}
+
+
+
+.Loan-listing-content-panel {
+  width: 1170px;
+  height: 462px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02);
+  margin: auto;
+  margin-top: 29px;
+}
+
+.SVG-Group {
+  width: 72px;
+  height: 61px;
+  object-fit: contain;
+  margin: 31px 26px 31px 26px;
+}
+
+.circular-div
+{
+	width: 124px;
+	height: 124px;
+	border-radius: 62px;
+	border: 1px lightgrey solid;
+  margin: auto;
+  margin-top: 110px;
+
+}
+
+
+.You-have-no-loans-yet {
+  width: 371px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.06;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #101010;
+  color: var(--color-black-cod);
+  margin: auto;
+}
+
+.Loans-spacer-div
+{
+  height: 1px;
+}
+
+.Loans-additional-text {
+  width: 741px;
+  height: 44px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.83;
+  text-align: center;
+  color: #858585;
+  margin: auto;
+}

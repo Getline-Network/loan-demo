@@ -1,0 +1,63 @@
+.request-loan-panel
+{
+	margin: auto;
+	width: 600px;
+}
+
+.Request-loan {
+  height: 28px;
+  font-family: Montserrat;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #101010;
+  color: var(--color-black-cod);
+  margin-left: 25px;
+}
+
+
+.request-loan-inner-panel
+{
+  width: 570px;
+  height: 393px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02);
+  padding: 54px;
+}
+
+
+.This-is-demo-of-Getline {
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.38;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #101010;
+  color: var(--color-black-cod);
+}
+
+.To-start-Reedem-your {
+  height: 22px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.83;
+  text-align: center;
+  color: #858585;
+
+}
+
+#redeem-button {
+  width: 222px;
+  height: 44px;
+  border-radius: 2px;
+  background-color: #7249f8;
+  border: none;
+  margin: auto;
+  display: block;
+  margin-top: 175px;
+}
