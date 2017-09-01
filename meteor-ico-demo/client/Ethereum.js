@@ -816,27 +816,36 @@ createLoan = function(
 
              NewLoanInstance = LoanClass.at(res.address,(e,r)=>{
 
-                    r.amountWanted((e1,r1)=>{console.log("Amount wanted? ",e1,r1.valueOf());});
+                      if (e) {
+                          console.log("Error during deployment", e);
+                          return;
+                      }
+                      if (!r.address) {
+                          console.log("Waiting for deployment: ", r.transactionHash);
+                      } else {
+                          r.amountWanted((e1,r1)=>{console.log("Amount wanted? ",e1,r1.valueOf());});
 
-              if(!LoanAddresses.findOne({address: r.address}))
-              {
-                   LoanAddresses.insert({address: r.address});
-                   Loans.insert({address: r.address, title: title, description: description});
+                            if(!LoanAddresses.findOne({address: r.address}))
+                            {
+                                 LoanAddresses.insert({address: r.address, user: Meteor.userId()});
+                                 Loans.insert({address: r.address, title: title, description: description});
 
-                   //Allowance+allowance transfer
-                   /*InstanceCol.allowance(account,lastLoan.get().address,collateral*10000,function(e,r){
-                    console.log("Allowance: ",e,r);
+                                 //Allowance+allowance transfer
+                                 /*InstanceCol.allowance(account,lastLoan.get().address,collateral*10000,function(e,r){
+                                  console.log("Allowance: ",e,r);
 
-                    InstanceCol.transfer(lastLoan.get().address,collateral*10000,function(e1,r1){
-                        console.log("Transfer: ",e1,r1);
-                      });
-                    });*/
+                                  InstanceCol.transfer(lastLoan.get().address,collateral*10000,function(e1,r1){
+                                      console.log("Transfer: ",e1,r1);
+                                    });
+                                  });*/
 
-              }
+                            }
+                      }
+                  });
 
-             });
+
+             }
              
-            }
           });
 
 

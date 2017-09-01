@@ -1,6 +1,6 @@
 Template.MyLoans.helpers({
 	Loans: function () {
-		return LoanAddresses.find();
+		return LoanAddresses.find({user: Meteor.userId()});
 	},
 	currentlyBorrowed: function()
 	{
