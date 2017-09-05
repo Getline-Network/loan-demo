@@ -29,10 +29,16 @@ Template.SingleLoanTemplate.onCreated(function(){
 
 	var LI = LoanClass.at(that.data.address);
 	that.amountWanted = new ReactiveVar(0);
+	that.rate = new ReactiveVar(0);
 	
 	LI.amountWanted((e,r)=>{
 			if(r && !e){
 				that.amountWanted.set(r.valueOf());
+			}
+	});
+	LI.interestPermil((e,r)=>{
+			if(r && !e){
+				that.rate.set(r.valueOf());
 			}
 	});
 
@@ -60,4 +66,13 @@ Template.SingleLoanTemplate.helpers({
 			else return "";
 		}
 	},
+	rate: function(){
+	var that = Template.instance();
+		if(that.rate)
+		{
+
+			return that.rate.get();
+		}
+	},
+
 });
