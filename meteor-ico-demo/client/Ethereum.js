@@ -940,9 +940,9 @@ var ThreePrint = web3.eth.contract(ThreePrintAbi);
 var ThreePrintInstance = ThreePrint.at("0xc30bc8801bd401f76c98eb0f268cf802170f9a14");
 
 
-var InstanceCol = PrintableToken.at("0xf44bc010359cc69bfb0004e0b1049474f1536067");
-var InstanceGTA = PrintableToken.at("0xbf1965bbbf6bc75a118de13af9f640f6d4f3304a");
-var InstanceGTB = PrintableToken.at("0x5fdbe5ad6eec00c9c05d8ef96f9eab8391bdf858");
+ InstanceCol = PrintableToken.at("0xf44bc010359cc69bfb0004e0b1049474f1536067");
+ InstanceGTA = PrintableToken.at("0xbf1965bbbf6bc75a118de13af9f640f6d4f3304a");
+ InstanceGTB = PrintableToken.at("0x5fdbe5ad6eec00c9c05d8ef96f9eab8391bdf858");
 
 
 LoanClass = web3.eth.contract(LoanAbi);
@@ -988,40 +988,71 @@ Template.TokenIndicators.onCreated(function(){
       //}, 1000);
 
 
-/* for transfers - not supported yet
-      var event1 = InstanceCol.Transfer([{'valueB': account}]);
-      var event2 = InstanceGTA.Transfer([{'valueB': account}]);
-      var event3 = InstanceGTB.Transfer([{'valueB': account}]);
+// for transfers - incoming
+      var event1i = InstanceCol.Transfer({'_to': account});
+      var event2i = InstanceGTA.Transfer({'_to': account});
+      var event3i = InstanceGTB.Transfer({'_to': account});
 
       // watch for changes
-        event1.watch(function(error, result){
+        event1i.watch(function(error, result){
           if (!error){
-            console.log("Event1t",result);
-            balanceCol.set(result);
+            console.log("Event1ti",result);
+            balanceCol.set(new BigNumber(parseFloat(result.args._value.valueOf()) + parseFloat(balanceCol.get().valueOf())));
           }
-          else console.log("Event1t",error);
+          else console.log("Event1ti",error);
         });
 
-        event2.watch(function(error, result){
+        event2i.watch(function(error, result){
           if (!error){
-            console.log("Event2t",result);
-            balanceGTA.set(result);
+            console.log("Event2ti",result);
+            balanceGTA.set(new BigNumber(parseFloat(result.args._value.valueOf()) + parseFloat(balanceGTA.get().valueOf())));
           }
-          else console.log("Event2t",error);
+          else console.log("Event2ti",error);
         });
 
-        event3.watch(function(error, result){
+        event3i.watch(function(error, result){
           if (!error){
-            console.log("Event3t",result);
-            balanceGTB.set(result);
+            console.log("Event3ti",result);
+            balanceGTB.set(new BigNumber(parseFloat(result.args._value.valueOf()) + parseFloat(balanceGTB.get().valueOf())));
           }
-          else console.log("Event3t",error);
+          else console.log("Event3ti",error);
         });
-*/
 
-      var event1p = InstanceCol.Print([{'valueA': account}]);
-      var event2p = InstanceGTA.Print([{'valueA': account}]);
-      var event3p = InstanceGTB.Print([{'valueA': account}]);
+
+//for transfers - outgoing
+      var event1o = InstanceCol.Transfer({'_from': account});
+      var event2o = InstanceGTA.Transfer({'_from': account});
+      var event3o = InstanceGTB.Transfer({'_from': account});
+
+      // watch for changes
+        event1o.watch(function(error, result){
+          if (!error){
+            console.log("Event1to",result);
+            balanceCol.set(new BigNumber(-(parseFloat(result.args._value.valueOf())) + parseFloat(balanceCol.get().valueOf())));
+          }
+          else console.log("Event1to",error);
+        });
+
+        event2o.watch(function(error, result){
+          if (!error){
+            console.log("Event2to",result);
+            balanceGTA.set(new BigNumber(-(parseFloat(result.args._value.valueOf())) + parseFloat(balanceGTA.get().valueOf())));
+          }
+          else console.log("Event2to",error);
+        });
+
+        event3o.watch(function(error, result){
+          if (!error){
+            console.log("Event3to",result);
+            balanceGTB.set(new BigNumber(-(parseFloat(result.args._value.valueOf())) + parseFloat(balanceGTB.get().valueOf())));
+          }
+          else console.log("Event3to",error);
+        });
+
+
+      var event1p = InstanceCol.Print({'_who': account});
+      var event2p = InstanceGTA.Print({'_who': account});
+      var event3p = InstanceGTB.Print({'_who': account});
 
       // watch for changes
         event1p.watch(function(error, result){
