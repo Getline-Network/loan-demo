@@ -1,3 +1,0 @@
-[submodule "ext/common-contracts"]
-	path = ext/common-contracts
-	url = git@gitlab.com:getline-ethereum/common-contracts.git
