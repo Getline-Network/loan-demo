@@ -940,9 +940,9 @@ var ThreePrint = web3.eth.contract(ThreePrintAbi);
 var ThreePrintInstance = ThreePrint.at("0xc30bc8801bd401f76c98eb0f268cf802170f9a14");
 
 
- InstanceCol = PrintableToken.at("0xf44bc010359cc69bfb0004e0b1049474f1536067");
- InstanceGTA = PrintableToken.at("0xbf1965bbbf6bc75a118de13af9f640f6d4f3304a");
- InstanceGTB = PrintableToken.at("0x5fdbe5ad6eec00c9c05d8ef96f9eab8391bdf858");
+InstanceCol = PrintableToken.at("0xf44bc010359cc69bfb0004e0b1049474f1536067");
+InstanceGTA = PrintableToken.at("0xbf1965bbbf6bc75a118de13af9f640f6d4f3304a");
+InstanceGTB = PrintableToken.at("0x5fdbe5ad6eec00c9c05d8ef96f9eab8391bdf858");
 
 
 LoanClass = web3.eth.contract(LoanAbi);
@@ -1206,7 +1206,7 @@ createLoan = function(
                             if(!LoanAddresses.findOne({address: r.address}))
                             {
                                  LoanAddresses.insert({address: r.address, user: Meteor.userId()});
-                                 Loans.insert({address: r.address, title: title, description: description});
+                                 Loans.insert({address: r.address, title: title, description: description, user: Meteor.userId()});
 
                                  //Allowance+allowance transfer
                                  /*InstanceCol.allowance(account,lastLoan.get().address,collateral*10000,function(e,r){
