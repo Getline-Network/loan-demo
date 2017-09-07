@@ -456,7 +456,8 @@ body{
 #login-buttons
 {
 	float: right;
-	margin-top: 50px;
+    margin-top: 42px;
+    margin-right: 50px;
 }
 .login-button
 {
