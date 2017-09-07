@@ -31,6 +31,7 @@
 <template name="SingleLoanTemplate">
 
 	<div class="single-investment-panel">
+		{{#if phaseDeployed}}
 		<div class="single-investment-panel-top">
 			<p class="sip-top-text">{{#if title}}{{title}}{{else}}Title here{{/if}}</p>
 			<br>
@@ -54,6 +55,17 @@
 		<div class="single-investment-panel-bottom">
 			<div class="sip-graphs-img1"></div>
 		</div>
+		{{else}}
+				<div class="single-investment-panel-top">
+					<p class="sip-top-text">{{#if title}}{{title}}{{else}}Title here{{/if}}</p>
+					<br>
+				</div>
+				<div class="single-investment-panel-middle">
+					Deploying loan on Ethereum...
+					<div class="deployment-progress-bar"></div>
+				</div>
+				<div class="single-investment-panel-bottom"></div>
+		{{/if}}
 	</div>
 
 </template>

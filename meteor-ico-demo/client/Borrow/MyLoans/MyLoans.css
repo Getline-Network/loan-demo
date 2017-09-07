@@ -1,0 +1,7 @@
+.deployment-progress-bar
+{
+	height: 10px;
+	width: 90%;
+	border-radius: 3px;
+	background-color: #7249f8;
+}

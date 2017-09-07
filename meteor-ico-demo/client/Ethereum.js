@@ -1174,6 +1174,9 @@ createLoan = function(
         var account = undefined;
             account = web3.eth.accounts[0];
 
+        var id1 = undefined;
+        var id2 = undefined;
+
       if(account)
       {
         LoanInstance = LoanClass.new(
@@ -1200,13 +1203,10 @@ createLoan = function(
                       }
                       if (!r.address) {
                           console.log("Waiting for deployment: ", r.transactionHash);
-                      } else {
-                          r.amountWanted((e1,r1)=>{console.log("Amount wanted? ",e1,r1.valueOf());});
 
-                            if(!LoanAddresses.findOne({address: r.address}))
-                            {
-                                 LoanAddresses.insert({address: r.address, user: Meteor.userId()});
-                                 Loans.insert({address: r.address, title: title, description: description, user: Meteor.userId()});
+                          
+                                 id1 = LoanAddresses.insert({address: null, user: Meteor.userId(), phase: "deploying"});
+                                 id2 = Loans.insert({address: null, title: title, description: description, user: Meteor.userId()});
 
                                  //Allowance+allowance transfer
                                  /*InstanceCol.allowance(account,lastLoan.get().address,collateral*10000,function(e,r){
@@ -1217,9 +1217,21 @@ createLoan = function(
                                     });
                                   });*/
 
-                            }
+                      } else {
+                          r.amountWanted((e1,r1)=>{console.log("Amount wanted? ",e1,r1.valueOf());});
+
+                          if(id1 && id2)
+                            {
+                              LoanAddresses.remove(id1);
+                              Loans.remove(id2);
+
+                              LoanAddresses.insert({address: r.address, user: Meteor.userId(), phase: "deployed"});
+                              Loans.insert({address: r.address, title: title, description: description, user: Meteor.userId()});
+                            } 
+
                       }
-                  });
+
+                      });
 
 
              }

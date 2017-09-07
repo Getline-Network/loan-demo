@@ -93,5 +93,8 @@ Template.SingleLoanTemplate.helpers({
 			return that.rate.get();
 		}
 	},
+	phaseDeployed: function(){
+		return this.phase === "deployed";
+	}
 
 });
