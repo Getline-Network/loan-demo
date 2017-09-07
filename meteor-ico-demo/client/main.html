@@ -29,9 +29,12 @@
     <li role="presentation"><a href="/Invest">INVEST</a></li>
     <li role="presentation"><a href="/Borrow">BORROW</a></li>
     <!--<li role="presentation"><a href="/CreateAccount">CREATE ACCOUNT</a></li>-->
-    <img id="profile-image" src="/profile_image.png">
+    
+    <div class="token-indicator-wrapper">
+      {{>TokenIndicators}}
+    </div>
     {{>loginButtons}}
-    Block no. {{currentBlock}}
+    
   </ul>
   </nav>
     <!--

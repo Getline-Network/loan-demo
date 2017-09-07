@@ -68,5 +68,12 @@
 	margin: auto;
 	text-align: center;
 	width: 315px;
-	margin-top: 75px;
+  margin-top: 55px;
+
+}
+
+.token-indicator-wrapper
+{
+    float: right;
+    margin-top: -30px !important;
 }
